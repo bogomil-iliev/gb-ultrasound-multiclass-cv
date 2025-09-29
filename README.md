@@ -17,6 +17,13 @@ End-to-end **PyTorch** pipeline for **gallbladder ultrasound** (9 classes) with 
 - **Explainability:** **Grad-CAM++** heatmaps for qualitative checks.
 
 ---
+## Thesis Abstract
+Ultrasound (US) is the most utilised imaging modality for gallbladder disease (GBD), but diagnostical accuracy is linked to operator skill, scanner settings and patient factors. The current work investigates whether lightweight deep learning models, that are designed for real-time use on modest hardware, can reliably classify nine gallbladder pathologies from US samples while meeting important validation standards that reflect clinical deployment.
+A reproducible pipeline is designed around three algorithms – ResNet-50 (serving as a baseline), TinyVit with 11 million parameters and GhostNet-1.0 (for benchmarking purposes). To improve robustness on the limited GBD US data that is frequently noisy, the input geometry is standardised, z-score normalisation is applied to each image, and QC filtering is applied. This is done together with conservative augmentations including Gaussian blur. Data leakage is controlled by patient-level grouping: a 5-fold stratified cross validation. Training employs linear probe phase followed by phased unfreezing with discriminative learning rates and early stopping on macro-F1. Class imbalances handling is also further tested with a weighted sampler. Model behaviour is examined with Grad-CAM++ and error analysis through confusion matrix and precision-recall curves.
+Under strict patient-level splits, all models achieve modest macro-F1 scores, with clear signs of overfitting once deeper layers are unfrozen. Grad-CAM++ reveals attention to US artefacts alongside pathology, which explains the limited generalisation. A deliberately “easy” demonstration aiming at splitting of US data without patient controls, is produced to showcase much higher headline scores. Thus, confirming that leakage can inflate performance and mask true clinical value and difficulty.
+The research concludes that on this multi-class task, methodological discipline (e.g. patient-level evaluation and training) is decisive to provide real generalisable results.
+
+---
 
 ## Dataset
 This repository **does not** include images. Use the public dataset (Turki et al., 2024) and follow the license on the source page.
