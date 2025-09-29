@@ -1,0 +1,10 @@
+numpy==1.26.4
+opencv-python==4.9.0.80
+albumentations==1.4.4
+timm==0.9.12
+scikit-learn>=1.6.0
+torch  #keep unpinned so Colab installs a compatible CUDA build
+tqdm
+matplotlib
+pandas
+requests
