@@ -1,7 +1,6 @@
 # GB Ultrasound (9-class) — Lightweight classification with patient-level CV
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bogomil-iliev/gb-ultrasound-multiclass-cv/blob/main/notebooks/gb_ultrasound_pipeline.ipynb)
-![Python](https://img.shields.io/badge/python-3.10+-informational)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 End-to-end **PyTorch** pipeline for **gallbladder ultrasound** (9 classes) with **patient-level 5-fold cross-validation**, blur-based quality control, class-imbalance handling, and **Grad-CAM++** explainability.
@@ -27,10 +26,6 @@ Dataset Download Link: https://data.mendeley.com/datasets/r6h24d2d3y/1
 - **Achieved with the original methodology**
 - **Best performing model is GhostNet-1.0.**
 
-Model	Best val macro-F1 (Approximately)	Fold	Epoch (Approximately)
-GhostNet-1.0	0.33	5	12–14
-TinyViT-11M	0.33	2	19–21
-ResNet-50	0.34	3	23–24
 <img width="501" height="85" alt="image" src="https://github.com/user-attachments/assets/42f14567-b609-4fc0-9aba-d3725001f0c5" />
 
 ---
@@ -78,7 +73,7 @@ Bogomil Iliev, Detection and Classification of Gallbladder Diseases through Ligh
 
 ---
 
-## Citation
+## License
 
 This project is released under the MIT License.
 
