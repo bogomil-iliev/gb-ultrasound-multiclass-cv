@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it and the thesis below."
+title: "GB Ultrasound (9-class): Lightweight classification with patient-level cross-validation"
+authors:
+  - family-names: "Iliev"
+    given-names: "Bogomil"
+repository-code: "https://github.com/bogomil-iliev/gb-ultrasound-multiclass-cv"
+url: "https://github.com/bogomil-iliev/gb-ultrasound-multiclass-cv"
+abstract: "End-to-end PyTorch pipeline for 9-class gallbladder ultrasound with patient-level 5-fold CV, blur-QC, class-imbalance handling, and Grad-CAM++ explainability."
+keywords: ["computer vision", "medical imaging", "ultrasound", "classification", "PyTorch", "Grad-CAM", "cross-validation"]
+license: "MIT"
+version: "1.0.0"              # update the latest release tag
+date-released: "2025-09-01"   # update when an update is released
+
+preferred-citation:
+  type: thesis
+  title: "Detection and Classification of Gallbladder Diseases through Lightweight Deep Learning Techniques"
+  authors:
+    - family-names: "Iliev"
+      given-names: "Bogomil"
+  year: 2025
+  institution: "University of Greater Manchester (Bolton)"
+  url: "https://github.com/bogomil-iliev/gb-ultrasound-multiclass-cv"
+  thesis-type: "Master's thesis"
+
+
